@@ -5,3 +5,130 @@
 #footer{
     color:green;
 }
+/* header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right:35px;
+    border-bottom: 2px solid darkgrey;
+    margin-bottom: 8px;
+   
+}
+.logo{
+    width:150px;
+    height:100px;
+   
+}
+.nav-items>ul{
+    display: flex;
+    list-style-type: none;
+
+}
+.nav-items>ul>button{
+    padding:0px 10px;
+    border-radius: 4px;
+    border:none;
+    background-color: rgb(69, 69, 240);
+    color: white;
+    cursor: pointer;
+
+}
+.nav-items>ul>li{
+    padding:8px;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container>p{
+    margin-left: -40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: 4px 2px  rgb(235, 222, 198);
+    font-style: italic;
+    color:rgb(223, 149, 13);
+}
+/* ------------------------------- */
+/* body  */
+.filter{
+    display: flex;
+ 
+    
+}
+.search-input{
+    padding-right: 10px;
+}
+
+.search-input button{
+    cursor: pointer;
+}
+/* ------------------------ */
+/* restaurant container */
+.res-container{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/* restaurant component  */
+/* res card  */
+.res-card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:250px;
+    border-radius: 8px;
+    padding:8px;
+    margin:8px 10px;
+    /* box-sizing: border-box; */
+    overflow: hidden visible;
+    background-color: rgb(249, 241, 241);
+}
+
+.res-card:hover{
+    box-shadow:  0 0px 6px 2px  rgb(102, 107, 107) ,   0 0px 6px 2px  rgb(189, 236, 236) ;
+    cursor: pointer;
+}
+
+ .res-logo{
+    width:100%;
+    object-fit: cover;
+    height:150px;
+    border-radius: 8px;
+
+} 
+.res-card>h3,.res-info>h4{
+    margin-bottom: 1px;
+}
+.res-info>h4{ margin-top: 0px;}
+
+.res-info{ 
+     margin-top: 4px;
+     display: flex;
+     flex-direction: column;
+    }
+
+.res-info>p{
+  padding-left:4px;
+  padding-bottom: 4px;
+  margin: 0px;
+  
+ 
+}
+/* shimmer container */
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shimmer-card{
+   height:200px ;
+   width:250px;
+   background-color: lightgray;
+   margin: 10px;
+
+}
