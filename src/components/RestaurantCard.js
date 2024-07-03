@@ -21,4 +21,22 @@ const RestaurantCard = (props) => {
     )
 }
 
+
+
+// higher order component-a fn that takes another component and enhances the component with new features
+
+export const withPromotedLabel = (RestaurantCard) => {
+    return (props) => {
+        // console.log(props);
+        const { resObj } = props;
+       
+        return (
+                <div  className="relative">
+                <h4   className="absolute  right-18 left-4 bg-black text-white p-2 rounded-md  m-0 text-lg">{resObj.info.aggregatedDiscountInfoV3.header + resObj.info.aggregatedDiscountInfoV3.subHeader}</h4>
+                <RestaurantCard  {...props} />
+                </div >
+        )
+    }
+    
+}
 export default RestaurantCard;
